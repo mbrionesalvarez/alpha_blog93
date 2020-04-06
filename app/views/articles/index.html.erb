@@ -1,6 +1,12 @@
 <div id="page-content">
 <h1 class="text-center mt-4">Listing all articles</h1>
 <div class="container">
-<%= render 'article', obj: @articles %>
+    <div class="pagination">
+        <%= will_paginate %>
+    </div>
+    <%= render 'article', obj: @articles %>
+    <div class="pagination">
+        <%= will_paginate %>
+    </div>
 </div>
 </div>
